@@ -1,0 +1,14 @@
+rootProject.name = 'restFull'
+include 'application'
+project(':application').projectDir = file('./application')
+include 'model'
+project(':model').projectDir = file('./domain/model')
+include 'usecase'
+project(':usecase').projectDir = file('./domain/usecase')
+include 'entrypoint'
+project(':entrypoint').projectDir = file('./infrastructure/entrypoint')
+include 'driver-adapter'
+project(':driver-adapter').projectDir = file('./infrastructure/driver-adapter')
+include 'helper'
+project(':helper').projectDir = file('./infrastructure/helper')
+

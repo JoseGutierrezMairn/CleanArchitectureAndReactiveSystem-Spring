@@ -1,0 +1,15 @@
+buildscript {
+	ext {
+		springBootVersion = '2.7.5'
+		lombokVersion = '1.18.24'
+	}
+}
+
+plugins {
+	id 'org.springframework.boot' version "${springBootVersion}"
+}
+
+group = 'co.com.tcs'
+version = 'snapshot-1.0.0'
+
+apply from: './main.gradle'
